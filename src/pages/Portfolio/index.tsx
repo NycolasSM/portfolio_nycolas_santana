@@ -1,5 +1,13 @@
+import "./style.css";
+
+import Header from "../../components/Header";
+
 function Portfolio() {
-  return <div>Teste</div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Portfolio;
