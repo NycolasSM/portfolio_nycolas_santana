@@ -8,6 +8,10 @@ function Portfolio() {
     <>
       <Header />
       <Hero />
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

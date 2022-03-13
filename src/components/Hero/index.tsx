@@ -1,13 +1,43 @@
 import "./style.css";
 
+import { useEffect, useState } from "react";
+
 import HeroImage from "../../assets/test.png";
 
 const index = () => {
+  const [scrollTop, setScrollTop] = useState(0);
+  const [scrolling, setScrolling] = useState(false);
+
+  // esolher um nome mais declarativo para essa variavel
+  const scrollingSize = -(scrollTop / 1000 - 2.15);
+
+  console.log(scrollingSize);
+
+  useEffect(() => {
+    const onScroll = (e: any) => {
+      setScrollTop(e.target.documentElement.scrollTop);
+      setScrolling(e.target.documentElement.scrollTop > scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollingSize]);
+
   return (
     <div className="hero__container">
-      <img src={HeroImage} className="hero__image" alt="hero__image" />
-      <div className="hero__text">
-        <h2>Nycolas Santana</h2>
+      <div className="hero">
+        <img
+          src={HeroImage}
+          className="hero__image"
+          style={{
+            transform:
+              scrollingSize > 1
+                ? `scale(${scrollingSize}) translateY(${scrollingSize * 50}px) `
+                : "",
+          }}
+          alt="hero__image"
+        />
+        <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
       </div>
     </div>
   );
