@@ -9,7 +9,7 @@ const index = () => {
   const [scrolling, setScrolling] = useState(false);
 
   // esolher um nome mais declarativo para essa variavel
-  const scrollingSize = -(scrollTop / 1000 - 2.15);
+  const scrollingSize = -(scrollTop / 1000 - 2.44);
 
   console.log(scrollingSize);
 
@@ -24,20 +24,24 @@ const index = () => {
   }, [scrollingSize]);
 
   return (
-    <div className="hero__container">
-      <div className="hero">
-        <img
-          src={HeroImage}
-          className="hero__image"
-          style={{
-            transform:
-              scrollingSize > 1
-                ? `scale(${scrollingSize}) translateY(${scrollingSize * 50}px) `
-                : "",
-          }}
-          alt="hero__image"
-        />
-        <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
+    <div className="hero__overflow">
+      <div className="hero__container">
+        <div className="hero">
+          <img
+            src={HeroImage}
+            className="hero__image"
+            style={{
+              transform:
+                scrollingSize > 1
+                  ? `scale(${scrollingSize}) translateY(${
+                      scrollingSize * 3
+                    }vw) `
+                  : "",
+            }}
+            alt="hero__image"
+          />
+          <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
+        </div>
       </div>
     </div>
   );

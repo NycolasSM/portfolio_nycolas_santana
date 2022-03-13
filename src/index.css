@@ -8,6 +8,9 @@ body {
   background-color: rgb(31, 31, 31);
   color: #efefef;
   height: 100%;
+
+  
+  overflow-x: hidden;
 }
 
 html {
