@@ -18,3 +18,9 @@
   font-size: 4rem;
   margin: 0;
 }
+
+@media (max-width: 1210px) {
+  .section__title_wrapper {
+    padding: 140px 40px
+  }
+}

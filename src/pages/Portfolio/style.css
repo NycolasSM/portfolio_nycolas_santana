@@ -3,6 +3,7 @@
   font-size: 5.5rem;
   margin: 200px auto 150px 0px;
   line-height: 120px;
+  letter-spacing: 2px;
   text-align: center;
   background: linear-gradient(91.36deg, #4946e9, #9701c4, #cc00ff);
   background-size: 200% 200%;
@@ -30,7 +31,7 @@
   align-items: center;
   width: 100vw;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1150px;
 }
 
 .about__me__container {
@@ -46,7 +47,7 @@
 
 .about__me__container span {
   flex: 40%;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   letter-spacing: 3px;
   line-height: 30px;
 }
@@ -59,14 +60,73 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 30px;
-  padding-left: 20px;
+  padding-left: 50px;
+}
+
+.about__me__cards div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about__me__card {
   min-width: 200px;
   min-height: 150px;
-  margin: 10px;
-  background-color: gray;
-  border: 1px gray;
+  margin: 11px;
+  background-color: rgb(56, 56, 56);
+  border: 2px solid rgb(104, 104, 104);
   border-radius: 16px;
+}
+
+.about__me__card p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.projects__count p:first-child {
+  color: rgb(142, 31, 245);
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+
+.commits_count p:first-child {
+  color: rgb(35, 190, 105);
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+
+.years__experience p:first-child {
+  color: rgb(31, 106, 245);
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+
+.passion__percent p:first-child {
+  color: rgb(245, 31, 102);
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+
+.my__technologies__stack {
+  margin: 130px 0px;
+  font-size: 2rem;
+}
+
+@media (max-width: 1210px) {
+  .about__me__container {
+    flex-direction: column;
+  }
+
+  .about__me__container > span {
+    padding: 0px 50px;
+  }
+
+  .about__me__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding: 40px
+  }
 }
