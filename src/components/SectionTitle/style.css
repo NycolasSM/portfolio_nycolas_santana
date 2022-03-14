@@ -1,5 +1,5 @@
 .section__title_wrapper {
-  width: 100%;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -27,6 +27,6 @@
 
 @media (max-width: 900px) {
   .section__title_wrapper {
-    padding: 90px 40px 130px 40px;
+    padding: 90px 0px;
   }
 }
