@@ -11,7 +11,7 @@ const ProfileTitle = () => {
         </div>
       </BrowserView>
       <MobileView>
-        <div className="profile__Title mobile">
+        <div className="profile__Title--mobile">
           <h3>Desenvolvedor Web</h3>
         </div>
       </MobileView>

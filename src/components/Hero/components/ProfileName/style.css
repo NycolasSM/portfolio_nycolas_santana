@@ -11,17 +11,22 @@
   margin: 3.3vw 0px 0px 0px;
 }
 
-.profile__name.mobile h2 {
+.profile__name--mobile h2 {
   font-size: 30px;
   letter-spacing: 5px;
   text-transform: uppercase;
   text-align: center;
-  -webkit-box-reflect: below 1px
-    linear-gradient(transparent, rgba(0, 0, 0, 0.11));
   line-height: 30px;
-  outline: none;
-  color: #307fe6;
+  color: #b8d5fc;
+  text-shadow: 0 0 20px #0363f4, 0 0 40px #0363f4, 0 0 80px #0363f4,
+    0 0 160px #0363f4, 0 0 320px #0363f4;
   margin: 55px 0px 20px 0px;
+}
+
+.profile__name--mobile h2 span:nth-child(even) {
+  color: #dbc3f8;
+  text-shadow: 0 0 20px #a803f4, 0 0 40px #a803f4, 0 0 80px #a803f4,
+    0 0 160px #a803f4, 0 0 320px #a803f4;
 }
 
 .profile__name h2 span {

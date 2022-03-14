@@ -14,7 +14,7 @@ const ProfileImage = () => {
         </div>
       </BrowserView>
       <MobileView>
-        <div className="profile__image mobile">
+        <div className="profile__image--mobile">
           <img
             src="https://avatars.githubusercontent.com/u/78886462?v=4"
             alt="Profile Image"
