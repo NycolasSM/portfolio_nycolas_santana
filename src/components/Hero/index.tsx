@@ -66,6 +66,11 @@ const Hero = () => {
           <ProfileImage />
           <ProfileName />
           <ProfileTitle />
+          <div className="mobile__dots__scroll">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
         </div>
       </MobileView>
     </>
