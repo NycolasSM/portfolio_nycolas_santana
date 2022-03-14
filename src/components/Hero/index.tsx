@@ -62,14 +62,11 @@ const Hero = () => {
         </div>
       </BrowserView>
       <MobileView>
-        <img
-          src={HeroBackgroundImageMobile}
-          className="background__hero__mobile"
-          alt=""
-        />
-        <ProfileImage />
-        <ProfileName />
-        <ProfileTitle />
+        <div className="hero--mobile">
+          <ProfileImage />
+          <ProfileName />
+          <ProfileTitle />
+        </div>
       </MobileView>
     </>
   );
