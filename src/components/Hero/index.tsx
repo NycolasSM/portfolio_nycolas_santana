@@ -2,13 +2,15 @@ import "./style.css";
 
 import { useEffect, useState } from "react";
 
-import HeroImage from "../../assets/test.png";
-import HeroBackgroundImage from "../../assets/HeroBackground.png";
+import HeroBackgroundImageMobile from "../../assets/HeroBackgroundMobile.png";
+
 import ProfileImage from "./components/ProfileImage";
 import ProfileName from "./components/ProfileName";
 import ProfileTitle from "./components/ProfileTitle";
 
-const index = () => {
+import { BrowserView, MobileView } from "react-device-detect";
+
+const Hero = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const [scrolling, setScrolling] = useState(false);
 
@@ -30,32 +32,50 @@ const index = () => {
   }, [scrollingSizeBackground]);
 
   return (
-    <div className="hero__container">
-      <div
-        className="hero"
-        style={{
-          transform:
-            scrollingSizeProfile > 0.5
-              ? `scale(${scrollingSizeProfile}) translateY(${
-                  scrollingSizeProfile * 3
-                }vw) `
-              : `scale(0.5) translateY(${30}px) `,
-        }}
-      >
-        <div className="hero__profile">
-          <ProfileImage />
-          <ProfileName />
-          <ProfileTitle />
-        </div>
+    <>
+      <BrowserView>
         <img
-          src={HeroBackgroundImage}
-          className="hero__background__image"
-          alt="hero__image"
+          src={HeroBackgroundImageMobile}
+          className="background__hero__mobile"
+          alt=""
         />
-        <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
-      </div>
-    </div>
+        <ProfileImage />
+        <ProfileName />
+        <ProfileTitle />
+      </BrowserView>
+      <MobileView>
+        <ProfileImage />
+        <ProfileName />
+        <ProfileTitle />
+      </MobileView>
+    </>
   );
 };
 
-export default index;
+export default Hero;
+
+// <div className="hero__container">
+// <div
+//   className="hero"
+//   style={{
+//     transform:
+//       scrollingSizeProfile > 0.5
+//         ? `scale(${scrollingSizeProfile}) translateY(${
+//             scrollingSizeProfile * 3
+//           }vw) `
+//         : `scale(0.5) translateY(${30}px) `,
+//   }}
+// >
+//   <div className="hero__profile">
+//     <ProfileImage />
+//     <ProfileName />
+//     <ProfileTitle />
+//   </div>
+//   <img
+//     src={HeroBackgroundImage}
+//     className="hero__background__image"
+//     alt="hero__image"
+//   />
+//   <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
+// </div>
+// </div>

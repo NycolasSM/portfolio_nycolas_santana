@@ -24,3 +24,9 @@
     padding: 140px 40px
   }
 }
+
+@media (max-width: 900px) {
+  .section__title_wrapper {
+    padding: 90px 40px 130px 40px;
+  }
+}
