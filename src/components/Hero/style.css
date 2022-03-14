@@ -1,11 +1,5 @@
-.hero__overflow {
-  /* overflow: hidden; */
-}
-
 .hero__container {
-  background-color: rgba(0, 2, 128, 0.562);
-  height: 300vh;
-  min-height: 100vh;
+  height: 2300px;
 }
 
 .hero {
@@ -15,9 +9,15 @@
   top: 1px;
 }
 
-.hero__image {
+.hero__profile {
+  position: absolute;
+  z-index: 100;
+  transform: scale(0.9);
+}
+
+.hero__background__image {
   height: 52vw;
-  transform: translateY(50px);
+  transform: translateY(100px) scale(2.05);
 }
 
 .hero__text {

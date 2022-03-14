@@ -1,0 +1,20 @@
+.section__title_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 920px;
+  padding: 140px 0px;
+}
+
+.section__title {
+  font-size: 1.6rem;
+  color: #cacaca;
+  margin: 0;
+}
+
+.section__description {
+  font-size: 4rem;
+  margin: 0;
+}

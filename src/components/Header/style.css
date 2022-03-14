@@ -70,13 +70,13 @@
 }
 
 .portfolio__header__navigation ul li:hover {
-  background: rgba(128, 128, 128, 0.301);
+  background: #80808038;
 }
 
 .portfolio__header__contact__me {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(161, 77, 201);
+  color: rgb(144, 76, 199);
   cursor: pointer;
   margin: 0;
 
@@ -101,7 +101,7 @@
 }
 
 .portfolio__header__contact__me:hover {
-  background: rgba(128, 128, 128, 0.301);
+  background: #80808038;
 }
 
 .portfolio__header__divider__line {
