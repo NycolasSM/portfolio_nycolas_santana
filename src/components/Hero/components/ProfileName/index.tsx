@@ -14,12 +14,10 @@ const ProfileName = () => {
         </div>
       </BrowserView>
       <MobileView>
-        <div className="profile__name mobile">
-          <h2>
-            <span>Nycolas </span>
-            <span>Santana</span>
-          </h2>
-        </div>
+        <h2>
+          <span>Nycolas </span>
+          <span>Santana</span>
+        </h2>
       </MobileView>
     </>
   );

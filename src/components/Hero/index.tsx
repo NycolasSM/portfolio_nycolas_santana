@@ -2,6 +2,7 @@ import "./style.css";
 
 import { useEffect, useState } from "react";
 
+import HeroBackgroundImage from "../../assets/HeroBackground.png";
 import HeroBackgroundImageMobile from "../../assets/HeroBackgroundMobile.png";
 
 import ProfileImage from "./components/ProfileImage";
@@ -34,16 +35,38 @@ const Hero = () => {
   return (
     <>
       <BrowserView>
+        <div className="hero__container">
+          <div
+            className="hero"
+            style={{
+              transform:
+                scrollingSizeProfile > 0.5
+                  ? `scale(${scrollingSizeProfile}) translateY(${
+                      scrollingSizeProfile * 3
+                    }vw) `
+                  : `scale(0.5) translateY(${30}px) `,
+            }}
+          >
+            <div className="hero__profile">
+              <ProfileImage />
+              <ProfileName />
+              <ProfileTitle />
+            </div>
+            <img
+              src={HeroBackgroundImage}
+              className="hero__background__image"
+              alt="hero__image"
+            />
+            <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
+          </div>
+        </div>
+      </BrowserView>
+      <MobileView>
         <img
           src={HeroBackgroundImageMobile}
           className="background__hero__mobile"
           alt=""
         />
-        <ProfileImage />
-        <ProfileName />
-        <ProfileTitle />
-      </BrowserView>
-      <MobileView>
         <ProfileImage />
         <ProfileName />
         <ProfileTitle />
@@ -53,29 +76,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// <div className="hero__container">
-// <div
-//   className="hero"
-//   style={{
-//     transform:
-//       scrollingSizeProfile > 0.5
-//         ? `scale(${scrollingSizeProfile}) translateY(${
-//             scrollingSizeProfile * 3
-//           }vw) `
-//         : `scale(0.5) translateY(${30}px) `,
-//   }}
-// >
-//   <div className="hero__profile">
-//     <ProfileImage />
-//     <ProfileName />
-//     <ProfileTitle />
-//   </div>
-//   <img
-//     src={HeroBackgroundImage}
-//     className="hero__background__image"
-//     alt="hero__image"
-//   />
-//   <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
-// </div>
-// </div>
