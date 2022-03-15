@@ -30,7 +30,7 @@
 .about__me__container span::first-letter {
   font-size: 4rem;
   font-weight: bold;
-  color: rebeccapurple;
+  color: rgb(113, 38, 189);
 }
 
 .about__me__container span {
@@ -158,6 +158,10 @@
   }
   .my__technologies__stack {
     margin: 80px 0px 80px 0px;
+  }
+  .projects__cards {
+    flex-direction: column;
+    gap: 40px;
   }
 }
 
