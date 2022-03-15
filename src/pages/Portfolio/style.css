@@ -3,7 +3,7 @@
   font-size: 5.5rem;
   margin: 190px auto 140px 0px;
   line-height: 120px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-align: center;
   background: linear-gradient(91.36deg, #4946e9, #9701c4, #cc00ff);
   background-size: 200% 200%;
@@ -13,23 +13,10 @@
   animation: intro-gradient 4s infinite ease;
 }
 
-@keyframes intro-gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
 .portfolio__section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
   margin: 0 auto;
   max-width: 1150px;
 }
@@ -42,12 +29,13 @@
 
 .about__me__container span::first-letter {
   font-size: 4rem;
+  font-weight: bold;
   color: rebeccapurple;
 }
 
 .about__me__container span {
   flex: 40%;
-  font-size: 1.15rem;
+  font-size: 1.23rem;
   letter-spacing: 3px;
   line-height: 30px;
 }
@@ -74,8 +62,8 @@
   min-width: 200px;
   min-height: 150px;
   margin: 11px;
-  background-color: rgb(56, 56, 56);
-  border: 2px solid rgb(104, 104, 104);
+  background-color: var(--backgroundCard);
+  border: 2px solid var(--cardBorder);
   border-radius: 16px;
 }
 
@@ -110,8 +98,28 @@
 }
 
 .my__technologies__stack {
-  margin: 130px 0px;
-  font-size: 2rem;
+  margin: 180px 0px 80px 0px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.technologies__badges {
+  width: 80%;
+  background-color: var(--backgroundCard);
+  border: 2px solid var(--cardBorder);
+  padding: 50px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projects__cards {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }
 
 @media (max-width: 1210px) {
@@ -127,15 +135,39 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
-    padding: 40px
+    padding: 40px;
   }
 }
-
 
 @media (max-width: 900px) {
   .portfolio__intro {
     font-weight: 600;
     font-size: 4.2rem;
     margin: 160px auto 120px 0px;
+  }
+  .technologies__badges {
+    background-color: rgb(37, 37, 37);
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 2px solid rgb(87, 87, 87);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .my__technologies__stack {
+    margin: 80px 0px 80px 0px;
+  }
+}
+
+@keyframes intro-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }

@@ -1,0 +1,84 @@
+.project__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 420px;
+  height: 570px;
+  padding: 20px 40px 30px 40px;
+  gap: 30px;
+  background-color: var(--backgroundCard);
+
+  border-radius: 20px;
+  border: solid 6px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #211561, #581361);
+  background-origin: border-box;
+  box-shadow: 190px 1000px 100px rgba(26, 25, 25, 0.733) inset;
+  transition: all ease 0.2s;
+  overflow: hidden;
+}
+
+.project__card__info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 280px;
+  justify-content: center;
+}
+
+.project__card__info h3 {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.project__card__info span {
+  line-height: 30px;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.project__card__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.project__card__buttons button {
+  border-radius: 15px;
+  width: 210px;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  color: white;
+  border: solid 4px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #3f24dd, #c027d4);
+  background-origin: border-box;
+  box-shadow: 190px 1000px 100px rgba(34, 34, 34, 0.925) inset;
+  transition: all ease 0.2s;
+}
+
+.project__card__buttons button:hover {
+  box-shadow: 190px 1000px 100px rgba(43, 43, 43, 0.685) inset;
+  cursor: pointer;
+}
+
+.project__card__info button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project__card img {
+  height: 260px;
+  width: 470px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  opacity: 0.8;
+}

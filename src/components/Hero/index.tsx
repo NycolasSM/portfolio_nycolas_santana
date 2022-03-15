@@ -13,19 +13,14 @@ import { BrowserView, MobileView } from "react-device-detect";
 
 const Hero = () => {
   const [scrollTop, setScrollTop] = useState(0);
-  const [scrolling, setScrolling] = useState(false);
 
   // esolher um nome mais declarativo para essa variavel
   const scrollingSizeBackground = -(scrollTop / 1000 - 2.44);
   const scrollingSizeProfile = -(scrollTop / 1800 - 1.2);
 
-  console.log(`scrollBackground${scrollingSizeBackground}`);
-  console.log(`scrollProfile${scrollingSizeProfile}`);
-
   useEffect(() => {
     const onScroll = (e: any) => {
       setScrollTop(e.target.documentElement.scrollTop);
-      setScrolling(e.target.documentElement.scrollTop > scrollTop);
     };
     window.addEventListener("scroll", onScroll);
 
@@ -35,7 +30,7 @@ const Hero = () => {
   return (
     <>
       <BrowserView>
-        <div className="hero__container">
+        <div className="hero__container" id="start">
           <div
             className="hero"
             style={{
@@ -62,7 +57,7 @@ const Hero = () => {
         </div>
       </BrowserView>
       <MobileView>
-        <div className="hero--mobile">
+        <div className="hero--mobile" id="start">
           <ProfileImage />
           <ProfileName />
           <ProfileTitle />

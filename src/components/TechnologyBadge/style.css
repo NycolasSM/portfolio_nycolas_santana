@@ -1,0 +1,9 @@
+.technology__badge img{
+  height: 40px;
+  transition: all ease 0.2s;
+}
+
+.technology__badge img:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+}

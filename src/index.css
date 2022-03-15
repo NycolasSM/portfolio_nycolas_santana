@@ -1,3 +1,8 @@
+:root {
+  --backgroundCard: #252525;
+  --cardBorder: #5a5a5a;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,12 +14,12 @@ body {
   color: #efefef;
   height: 100%;
 
-  
   overflow-x: hidden;
 }
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 code {

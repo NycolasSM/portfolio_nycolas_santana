@@ -63,6 +63,11 @@
   padding: 8px 22px;
 }
 
+.portfolio__header__navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 510px) {
   .portfolio__header__navigation ul li {
     padding: 6px 10px;
