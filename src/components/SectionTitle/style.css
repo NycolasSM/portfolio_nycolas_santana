@@ -17,16 +17,35 @@
 .section__description {
   font-size: 4rem;
   margin: 0;
+
+  background: linear-gradient(91.36deg, #4946e9, #9701c4, #cc00ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: intro-gradient 4s infinite ease;
 }
 
 @media (max-width: 1210px) {
   .section__title_wrapper {
-    padding: 140px 40px
+    padding: 140px 40px;
   }
 }
 
 @media (max-width: 900px) {
   .section__title_wrapper {
     padding: 90px 0px;
+  }
+}
+
+@keyframes intro-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
   }
 }
