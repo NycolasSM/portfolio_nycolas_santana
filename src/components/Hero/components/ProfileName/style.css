@@ -31,15 +31,12 @@
   text-shadow: 0 0 20px #0363f4, 0 0 40px #0363f4, 0 0 80px #0363f4,
     0 0 160px #0363f4, 0 0 320px #0363f4;
   margin: 55px 0px 20px 0px;
-  animation: tubeLightGlowEffectBlue 7s linear infinite;
 }
 
 .profile__name--mobile h2 span:nth-child(even) {
   color: #dbc3f8;
   text-shadow: 0 0 20px #a803f4, 0 0 40px #a803f4, 0 0 80px #a803f4,
     0 0 160px #a803f4, 0 0 320px #a803f4;
-  animation: tubeLightGlowEffectPurple 8s linear infinite;
-  animation-delay: 0.4s;
 }
 
 @keyframes tubeLightGlowEffectBlue {
