@@ -118,9 +118,144 @@
 }
 
 .projects__cards {
-  display: flex;
-  flex-direction: row;
+  align-self: flex-start;
+  margin-left: 10vw;
+  height: 300px;
+  width: 300px;
   gap: 50px;
+}
+
+/* Cards */
+
+:root {
+  --width: 100%;
+  --height: 100%;
+  --border-width: 300px;
+  --border-height: 300px;
+}
+
+.gallery {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.gallery:after {
+  content: "";
+}
+
+.gallery img {
+  width: var(--width);
+  height: var(--height);
+}
+
+.clipped-border {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  padding: 5px;
+  background: linear-gradient(rgb(56, 28, 214), rgb(162, 31, 214));
+  height: var(--height);
+  width: var(--width);
+  transition: all ease 0.2s;
+  position: absolute;
+  cursor: pointer;
+
+  transform: scale(1);
+  transform-origin: right top;
+}
+
+.clipped-border:before {
+  content: "";
+  position: absolute;
+  opacity: 0.15;
+  width: 400px;
+  height: 60px;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.clipped-border:hover:before {
+  transform: translate(-150px, 400%) rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.clipped-border:nth-child(2) {
+  top: 231px;
+  left: 130px;
+}
+
+.clipped-border:nth-child(3) {
+  top: -10;
+  left: 272px;
+}
+
+.clipped-border:nth-child(4) {
+  top: 230px;
+  left: 413px;
+}
+
+.clipped-border:nth-child(5) {
+  top: -10;
+  left: 554px;
+}
+
+#clipped {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.clipped-border:hover {
+  height: 105%;
+  width: 105%;
+  transition: all ease 0.2s;
+  z-index: 10;
+}
+
+@media screen and (max-width: 500px) {
+  .clipped-border {
+    width: 100px;
+    height: 100px;
+  }
+
+  .clipped-border:nth-child(2) {
+    top: 0;
+    left: 100px;
+  }
+
+  .clipped-border:nth-child(3) {
+    left: 200px;
+  }
+
+  .clipped-border:nth-child(4) {
+    top: 82px;
+    left: 50px;
+  }
+
+  .clipped-border:nth-child(5) {
+    top: 82px;
+    left: 150px;
+  }
 }
 
 @media (max-width: 1210px) {

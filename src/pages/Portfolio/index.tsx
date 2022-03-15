@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import SectionTitle from "../../components/SectionTitle";
 import TechnologyBadge from "../../components/TechnologyBadge";
-import ProjectsCard from "../../components/ProjectsCard";
+import ProjectsCard from "../../components/ProjectsCard/";
 
 function Portfolio() {
   return (
@@ -93,21 +93,13 @@ function Portfolio() {
           />
           <br />
           <div className="projects__cards">
-            <ProjectsCard
-              gif="https://raw.githubusercontent.com/NycolasSM/assets/main/landpage_bootstrap%20preview%20Gif.gif"
-              title="Company LandPage"
-              description="Uma simulação de uma LandPage de uma empresa genérica, projeto realizado afins de praticar conhecimentos de bootstrap e aprender alguns designs novos"
-              link="https://github.com/NycolasSM/Company_LandPage_Bootstrap"
-              livePreview="https://company-land-page-bootstrap.vercel.app/"
-              order={1}
-            />
-            <ProjectsCard
-              gif="https://raw.githubusercontent.com/NycolasSM/assets/main/to-be-hero-cypress-preview.gif"
-              title="Be the Hero (Cypress)"
-              description="Projeto realizado para praticar e aprender sobre testes automatizados com o Cypress e gerando relatórios com Allure"
-              link="https://github.com/NycolasSM/be_the_hero_cypress"
-              order={1}
-            />
+            <div className="gallery">
+              <ProjectsCard title="" gif="" link="" description="" />
+              <ProjectsCard title="" gif="" link="" description="" />
+              <ProjectsCard title="" gif="" link="" description="" />
+              <ProjectsCard title="" gif="" link="" description="" />
+              <ProjectsCard title="" gif="" link="" description="" />
+            </div>
           </div>
         </section>
       </main>

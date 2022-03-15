@@ -17,25 +17,17 @@ const ProjectsCard: React.FC<Props> = ({
   livePreview,
   order = 1,
 }) => {
+  const animDecrption = (e: any) => {
+    console.log(e.target.classList);
+    e.target.classList.toggle("active");
+  };
+
   return (
-    <div className="project__card">
-      <img src={gif} alt="Project Gif" style={{ order: `${order}` }} />
-      <div className="project__card__info" style={{ order: `1` }}>
-        <h3>{title}</h3>
-        <span>{description}</span>
-        <div className="project__card__buttons">
-          <button>
-            <a href={link}>Acesse o reposiório</a>
-          </button>
-          {livePreview ? (
-            <button>
-              <a href={livePreview}>Live Preview</a>
-            </button>
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
+    <div className="clipped-border">
+      <img
+        src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fbpucette.b.p.pic.centerblog.net%2Ffv86ll9r.jpg&f=1"
+        id="clipped"
+      />
     </div>
   );
 };
