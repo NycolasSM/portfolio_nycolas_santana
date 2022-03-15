@@ -26,6 +26,7 @@ const ProjectsCard: React.FC<Props> = ({
       <span>{title}</span>
       <img
         src="{cardPreview}"
+        alt="Project Preview"
         id="clipped"
         style={{
           backgroundImage: `url(${cardPreview})`,

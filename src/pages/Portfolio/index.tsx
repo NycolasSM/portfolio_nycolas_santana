@@ -175,7 +175,6 @@ function Portfolio() {
             description="Alguns dos projetos desenvolvidos.."
             maxWidth={600}
           />
-          <br />
           <div className="projects__cards">
             <div className="gallery">
               <ProjectsCard

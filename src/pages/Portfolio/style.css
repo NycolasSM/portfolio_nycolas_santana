@@ -44,7 +44,7 @@
   flex: 40%;
 }
 
-/* formação */
+/* Formation Section */
 
 .my__educational__experience__title {
   font-size: 2rem;
@@ -142,6 +142,8 @@
   object-fit: cover;
 }
 
+/* .............. */
+
 .about__me__cards {
   display: flex;
   flex-wrap: wrap;
@@ -215,15 +217,14 @@
   gap: 10px;
 }
 
+/* Projects Cards */
+
 .projects__cards {
-  align-self: flex-start;
-  margin-left: 10vw;
+  align-self: center;
   height: 300px;
   width: 300px;
-  gap: 50px;
 }
 
-/* Cards */
 
 :root {
   --width: 100%;
@@ -235,8 +236,6 @@
 .gallery {
   position: relative;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 100%;
   width: 100%;
 }
@@ -250,89 +249,7 @@
   height: var(--height);
 }
 
-.clipped-border {
-  -webkit-clip-path: polygon(
-    50% 0%,
-    95% 25%,
-    95% 75%,
-    50% 100%,
-    5% 75%,
-    5% 25%
-  );
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-  padding: 5px;
-  background: linear-gradient(rgb(56, 28, 214), rgb(162, 31, 214));
-  height: var(--height);
-  width: var(--width);
-  transition: all ease 0.2s;
-  position: absolute;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transform: scale(1);
-  transform-origin: right top;
-}
-
-.clipped-border:before {
-  content: "";
-  position: absolute;
-  opacity: 0.15;
-  width: 400px;
-  height: 60px;
-  background: white;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: rotate(45deg);
-  transition: transform 0.5s;
-}
-
-.clipped-border:hover:before {
-  transform: translate(-150px, 400%) rotate(45deg);
-  transition: transform 0.5s;
-}
-
-.clipped-border:nth-child(2) {
-  top: 231px;
-  left: 130px;
-}
-
-.clipped-border:nth-child(3) {
-  top: -10;
-  left: 272px;
-}
-
-.clipped-border:nth-child(4) {
-  top: 230px;
-  left: 413px;
-}
-
-.clipped-border:nth-child(5) {
-  top: -10;
-  left: 554px;
-}
-
-#clipped {
-  -webkit-clip-path: polygon(
-    50% 0%,
-    95% 25%,
-    95% 75%,
-    50% 100%,
-    5% 75%,
-    5% 25%
-  );
-  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-}
-
-.clipped-border:hover {
-  height: 105%;
-  width: 105%;
-  transition: all ease 0.2s;
-  z-index: 10;
-}
+/* .................. */
 
 @media (max-width: 1200px) {
   .my__educational__experience {
@@ -354,66 +271,7 @@
   }
 }
 
-@media (max-width: 1020px) {
-  .clipped-border {
-    width: 200px;
-    height: 200px;
-  }
-
-  .projects__cards {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .clipped-border:hover {
-    height: 210px;
-    width: 210px;
-    transition: all ease 0.2s;
-  }
-
-  .projects__cards .gallery {
-    align-self: center;
-    height: 300px;
-    width: 300px;
-    gap: 50px;
-  }
-
-  .clipped-border:nth-child(1) {
-    top: -10;
-    left: 279px;
-  }
-
-  .clipped-border:nth-child(2) {
-    top: 203px;
-    left: 184px;
-  }
-
-  .clipped-border:nth-child(3) {
-    top: 45px;
-    left: 89px;
-  }
-
-  .clipped-border:nth-child(4) {
-    top: 360px;
-    left: 90px;
-  }
-
-  .clipped-border:nth-child(5) {
-    top: 360px;
-    left: 279px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .projects__cards .gallery {
-    align-self: flex-start;
-    height: 300px;
-    width: 300px;
-    gap: 50px;
-  }
-}
-
-@media (max-width: 1210px) {
+@media (max-width: 1220px) {
   .about__me__container {
     flex-direction: column;
   }
@@ -427,6 +285,11 @@
     flex-wrap: wrap;
     margin-left: 0;
     padding: 40px;
+  }
+  .projects__cards {
+    align-self: center;
+    height: 210px;
+    width: 210px;
   }
 }
 
@@ -452,14 +315,6 @@
   .projects__cards {
     flex-direction: column;
     margin: 0 0 0 10vw;
-    gap: 40px;
-  }
-}
-
-@media (max-width: 650px) {
-  .projects__cards {
-    flex-direction: column;
-    margin: 0 0 0 -10vw;
     gap: 40px;
   }
 }

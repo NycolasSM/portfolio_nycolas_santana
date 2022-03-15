@@ -29,3 +29,114 @@
   width: 80%;
   transition: all ease 0.3s;
 }
+
+.clipped-border {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  padding: 5px;
+  background: linear-gradient(rgb(56, 28, 214), rgb(162, 31, 214));
+  height: var(--height);
+  width: var(--width);
+  transition: all ease 0.2s;
+  position: absolute;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(1);
+  transform-origin: right top;
+}
+
+.clipped-border:before {
+  content: "";
+  position: absolute;
+  opacity: 0.15;
+  width: 400px;
+  height: 60px;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.clipped-border:hover:before {
+  transform: translate(-150px, 400%) rotate(45deg);
+  transition: transform 0.5s;
+}
+
+.clipped-border:nth-child(2) {
+  top: 234px;
+  left: -140px;
+}
+
+.clipped-border:nth-child(3) {
+  top: -10;
+  left: -280px;
+}
+
+.clipped-border:nth-child(4) {
+  top: 234px;
+  left: 140px;
+}
+
+.clipped-border:nth-child(5) {
+  top: -10;
+  left: 280px;
+}
+
+#clipped {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.clipped-border:hover {
+  height: 105%;
+  width: 105%;
+  transition: all ease 0.2s;
+  z-index: 10;
+}
+
+@media (max-width: 1020px) {
+  .clipped-border:nth-child(1) {
+    top: 234px;
+    left: 0px;
+  }
+
+  .clipped-border:nth-child(2) {
+    top: 0;
+    left: 70px;
+  }
+
+  .clipped-border:nth-child(3) {
+    top: -10;
+    left: -210px;
+  }
+
+  .clipped-border:nth-child(4) {
+    top: 468px;
+    left: -210px;
+  }
+
+  .clipped-border:nth-child(5) {
+    top: 468px;
+    left: 70px;
+  }
+}
