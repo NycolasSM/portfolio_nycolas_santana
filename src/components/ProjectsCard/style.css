@@ -1,0 +1,27 @@
+.clipped-border img {
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  transition: all ease 0.3s;
+}
+
+.clipped-border:hover img {
+  filter: brightness(0.5);
+  background-size: 330px;
+}
+
+.clipped-border:hover span {
+  opacity: 1;
+  filter: brightness(20);
+}
+
+.clipped-border span {
+  position: absolute;
+  font-size: 1.9rem;
+  justify-self: center;
+  z-index: 10;
+  opacity: 0.3;
+  text-align: center;
+  width: 80%;
+  transition: all ease 0.3s;
+}

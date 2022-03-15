@@ -1,32 +1,37 @@
 import "./style.css";
 
 type Props = {
-  gif: string;
+  cardPreview: string;
   title: string;
   description: string;
   link: string;
   livePreview?: string;
   order?: number;
+  backgroundSize?: number;
+  backgroundPosition?: string;
 };
 
 const ProjectsCard: React.FC<Props> = ({
-  gif,
+  cardPreview,
   title,
   description,
   link,
   livePreview,
   order = 1,
+  backgroundSize = 330,
+  backgroundPosition = "top",
 }) => {
-  const animDecrption = (e: any) => {
-    console.log(e.target.classList);
-    e.target.classList.toggle("active");
-  };
-
   return (
     <div className="clipped-border">
+      <span>{title}</span>
       <img
-        src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fbpucette.b.p.pic.centerblog.net%2Ffv86ll9r.jpg&f=1"
+        src="{cardPreview}"
         id="clipped"
+        style={{
+          backgroundImage: `url(${cardPreview})`,
+          backgroundSize: `${backgroundSize}px`,
+          backgroundPosition: `${backgroundPosition}`,
+        }}
       />
     </div>
   );

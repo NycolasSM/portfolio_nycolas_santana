@@ -5,6 +5,7 @@ import Hero from "../../components/Hero";
 import SectionTitle from "../../components/SectionTitle";
 import TechnologyBadge from "../../components/TechnologyBadge";
 import ProjectsCard from "../../components/ProjectsCard/";
+import Footer from "../../components/Footer";
 
 function Portfolio() {
   return (
@@ -41,7 +42,7 @@ function Portfolio() {
                 <p>Experiencia estudando</p>
               </div>
               <div className="about__me__card commits_count">
-                <p>340+</p>
+                <p>360+</p>
                 <p>Commits no GitHub</p>
               </div>
               <div className="about__me__card passion__percent">
@@ -94,15 +95,45 @@ function Portfolio() {
           <br />
           <div className="projects__cards">
             <div className="gallery">
-              <ProjectsCard title="" gif="" link="" description="" />
-              <ProjectsCard title="" gif="" link="" description="" />
-              <ProjectsCard title="" gif="" link="" description="" />
-              <ProjectsCard title="" gif="" link="" description="" />
-              <ProjectsCard title="" gif="" link="" description="" />
+              <ProjectsCard
+                title="Spotify Clone"
+                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_spotify_clone.webp"
+                link=""
+                description=""
+              />
+              <ProjectsCard
+                title="Netflix Clone"
+                cardPreview="https://camo.githubusercontent.com/6a4ccffbeeab7b07d65776148e8ed3ce7f6c0c6086ecaa2192f8f88dbcae6ede/68747470733a2f2f692e696d6775722e636f6d2f4670314452706d2e706e67"
+                link=""
+                description=""
+                backgroundSize={620}
+                backgroundPosition="center"
+              />
+              <ProjectsCard
+                title="Vercel Clone "
+                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_vercel_homepage_clone.webp"
+                link=""
+                description=""
+              />
+              <ProjectsCard
+                title="Company Landpage"
+                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_company_landpage.webp"
+                link=""
+                description=""
+              />
+              <ProjectsCard
+                title="Be the Hero (Cypress)"
+                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_be_the_hero.webp"
+                link=""
+                description=""
+                backgroundSize={400}
+                backgroundPosition="center"
+              />
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }
