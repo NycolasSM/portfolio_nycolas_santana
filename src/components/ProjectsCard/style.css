@@ -91,8 +91,8 @@
     gap: 20px;
   }
   .project__card img {
-    height: 240px;
-    width: 420px;
+    height: 230px;
+    width: 400px;
     margin-bottom: 10px;
     border-radius: 20px;
     opacity: 0.8;
@@ -104,5 +104,8 @@
   .project__card__buttons button {
     font-size: 1rem;
     width: 200px;
+  }
+  .project__card__info h3 {
+    font-size: 2rem;
   }
 }
