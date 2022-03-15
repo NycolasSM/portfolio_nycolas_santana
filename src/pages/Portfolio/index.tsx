@@ -52,7 +52,7 @@ function Portfolio() {
             </div>
           </div>
           <h2 className="my__educational__experience__title">
-            Expericencias Educacionais
+            Experiências Educacionais
           </h2>
           <div className="my__educational__experience">
             <div className="college__formation">
