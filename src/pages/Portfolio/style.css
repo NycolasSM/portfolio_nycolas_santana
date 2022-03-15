@@ -169,7 +169,7 @@
   transition: all ease 0.2s;
   position: absolute;
   cursor: pointer;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,29 +236,62 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1020px) {
   .clipped-border {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .projects__cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .clipped-border:hover {
+    height: 210px;
+    width: 210px;
+    transition: all ease 0.2s;
+  }
+
+  .projects__cards .gallery {
+    align-self: center;
+    height: 300px;
+    width: 300px;
+    gap: 50px;
+  }
+
+  .clipped-border:nth-child(1) {
+    top: -10;
+    left: 279px;
   }
 
   .clipped-border:nth-child(2) {
-    top: 0;
-    left: 100px;
+    top: 203px;
+    left: 184px;
   }
 
   .clipped-border:nth-child(3) {
-    left: 200px;
+    top: 45px;
+    left: 89px;
   }
 
   .clipped-border:nth-child(4) {
-    top: 82px;
-    left: 50px;
+    top: 360px;
+    left: 90px;
   }
 
   .clipped-border:nth-child(5) {
-    top: 82px;
-    left: 150px;
+    top: 360px;
+    left: 279px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects__cards .gallery {
+    align-self: flex-start;
+    height: 300px;
+    width: 300px;
+    gap: 50px;
   }
 }
 
@@ -300,6 +333,15 @@
   }
   .projects__cards {
     flex-direction: column;
+    margin: 0 0 0 10vw;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .projects__cards {
+    flex-direction: column;
+    margin: 0 0 0 -10vw;
     gap: 40px;
   }
 }

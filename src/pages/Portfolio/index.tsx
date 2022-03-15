@@ -96,18 +96,10 @@ function Portfolio() {
           <div className="projects__cards">
             <div className="gallery">
               <ProjectsCard
-                title="Spotify Clone"
-                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_spotify_clone.webp"
+                title="Company Landpage"
+                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_company_landpage.webp"
                 link=""
                 description=""
-              />
-              <ProjectsCard
-                title="Netflix Clone"
-                cardPreview="https://camo.githubusercontent.com/6a4ccffbeeab7b07d65776148e8ed3ce7f6c0c6086ecaa2192f8f88dbcae6ede/68747470733a2f2f692e696d6775722e636f6d2f4670314452706d2e706e67"
-                link=""
-                description=""
-                backgroundSize={620}
-                backgroundPosition="center"
               />
               <ProjectsCard
                 title="Vercel Clone "
@@ -116,8 +108,8 @@ function Portfolio() {
                 description=""
               />
               <ProjectsCard
-                title="Company Landpage"
-                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_company_landpage.webp"
+                title="Spotify Clone"
+                cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_spotify_clone.webp"
                 link=""
                 description=""
               />
@@ -127,6 +119,14 @@ function Portfolio() {
                 link=""
                 description=""
                 backgroundSize={400}
+                backgroundPosition="center"
+              />
+              <ProjectsCard
+                title="Netflix Clone"
+                cardPreview="https://camo.githubusercontent.com/6a4ccffbeeab7b07d65776148e8ed3ce7f6c0c6086ecaa2192f8f88dbcae6ede/68747470733a2f2f692e696d6775722e636f6d2f4670314452706d2e706e67"
+                link=""
+                description=""
+                backgroundSize={620}
                 backgroundPosition="center"
               />
             </div>
