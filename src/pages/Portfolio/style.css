@@ -11,6 +11,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: intro-gradient 4s infinite ease;
+  text-shadow: 0 0 2px #d31cf841, 0 0 20px #d31cf841, 0 0 60px #d31cf841;
 }
 
 .portfolio__section {
@@ -46,14 +47,12 @@
 
 /* formação */
 
-/* 1120 */
-
 .my__educational__experience__title {
   font-size: 2rem;
   margin: 110px 0px 80px 0px;
   padding: 10px;
   font-weight: 300;
-  /* text-shadow: 0 0 8px #8d8d8d; */
+  text-shadow: 0 0 20px #616161;
 }
 
 .my__educational__experience {
@@ -337,7 +336,27 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 1020px) {
+@media (max-width: 1200px) {
+  .my__educational__experience {
+    flex-direction: column;
+  }
+  .glow__bar {
+    height: 2px;
+    width: 60vw;
+    margin: 70px 0px;
+  }
+  .college__formation {
+    width: 80%;
+  }
+  .courses {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 1020px) {
   .clipped-border {
     width: 200px;
     height: 200px;

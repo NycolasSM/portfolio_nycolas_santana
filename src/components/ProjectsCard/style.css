@@ -1,3 +1,7 @@
+.clipped-border {
+  overflow: hidden;
+}
+
 .clipped-border img {
   object-fit: contain;
   background-repeat: no-repeat;
