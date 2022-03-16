@@ -1,5 +1,6 @@
 .clipped-border {
   overflow: hidden;
+  color: inherit;
 }
 
 .clipped-border img {
@@ -65,7 +66,7 @@
   background: white;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   transform: rotate(45deg);
   transition: transform 0.5s;
 }
@@ -76,23 +77,23 @@
 }
 
 .clipped-border:nth-child(2) {
-  top: 234px;
-  left: -140px;
+  top: 230px;
+  left: -146px;
 }
 
 .clipped-border:nth-child(3) {
   top: -10;
-  left: -280px;
+  left: -286px;
 }
 
 .clipped-border:nth-child(4) {
-  top: 234px;
-  left: 140px;
+  top: 230px;
+  left: 135px;
 }
 
 .clipped-border:nth-child(5) {
   top: -10;
-  left: 280px;
+  left: 276px;
 }
 
 #clipped {
@@ -114,6 +115,37 @@
   z-index: 10;
 }
 
+/* Overlay and details */
+
+.project__details__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+  transition: all ease 0.2s;
+}
+
+.project__details {
+  z-index: -1;
+  text-align: center;
+  padding: 0px 20px;
+  transition: all ease 0.2s;
+}
+
+.project__details__overlay.choose {
+  opacity: 0.95;
+}
+
+.project__details__overlay.choose .project__details {
+  opacity: 1;
+}
+
 @media (max-width: 1020px) {
   .clipped-border:nth-child(1) {
     top: 234px;
@@ -121,22 +153,36 @@
   }
 
   .clipped-border:nth-child(2) {
-    top: 0;
-    left: 70px;
+    top: 68px;
+    left: 100px;
   }
 
   .clipped-border:nth-child(3) {
-    top: -10;
-    left: -210px;
+    top: 68px;
+    left: -99px;
   }
 
   .clipped-border:nth-child(4) {
-    top: 468px;
-    left: -210px;
+    top: 400px;
+    left: -100px;
   }
 
   .clipped-border:nth-child(5) {
-    top: 468px;
-    left: 70px;
+    top: 400px;
+    left: 99px;
+  }
+  .clipped-border:before {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    opacity: 0.15;
+    width: 290px;
+    height: 40px;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
   }
 }

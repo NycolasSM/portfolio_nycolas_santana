@@ -6,9 +6,15 @@ type Props = {
   title: string;
   description: string;
   maxWidth?: number;
+  fontSize?: number;
 };
 
-const SectionTitle: React.FC<Props> = ({ title, description, maxWidth }) => {
+const SectionTitle: React.FC<Props> = ({
+  title,
+  description,
+  maxWidth,
+  fontSize,
+}) => {
   return (
     <div className="section__title_wrapper">
       <h3 className="section__title">{title}</h3>
@@ -16,6 +22,7 @@ const SectionTitle: React.FC<Props> = ({ title, description, maxWidth }) => {
         className="section__description"
         style={{
           maxWidth: `${maxWidth}px`,
+          fontSize: `${fontSize}px`,
         }}
       >
         {description}

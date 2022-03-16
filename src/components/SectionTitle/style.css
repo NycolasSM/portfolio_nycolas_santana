@@ -36,6 +36,9 @@
   .section__title_wrapper {
     padding: 90px 0px;
   }
+  .section__description {
+    font-size: 3rem;
+  }
 }
 
 @keyframes intro-gradient {

@@ -9,6 +9,7 @@ type Props = {
   order?: number;
   backgroundSize?: number;
   backgroundPosition?: string;
+  isChoosen?: boolean;
 };
 
 const ProjectsCard: React.FC<Props> = ({
@@ -20,9 +21,30 @@ const ProjectsCard: React.FC<Props> = ({
   order = 1,
   backgroundSize = 330,
   backgroundPosition = "top",
+  isChoosen,
 }) => {
+  const chooseProject = (e: any) => {
+    e.target.classList.toggle("choose");
+  };
+
   return (
-    <div className="clipped-border">
+    <a
+      className="clipped-border"
+      style={isChoosen === true ? { top: 0, left: 0 } : {}}
+      href={link}
+    >
+      {/* <div
+        className="project__details__overlay"
+        // onClick={(e) => chooseProject(e)}
+      >
+        <div className="project__details">
+          <p>{description}</p>
+          {livePreview ? <button>live Preview</button> : ""}
+          <button>
+            <a href={link}>Repositório</a>
+          </button>
+        </div>
+      </div> */}
       <span>{title}</span>
       <img
         src="{cardPreview}"
@@ -34,8 +56,10 @@ const ProjectsCard: React.FC<Props> = ({
           backgroundPosition: `${backgroundPosition}`,
         }}
       />
-    </div>
+    </a>
   );
 };
 
 export default ProjectsCard;
+
+// style={{ choose === true ? top: `${top}`, left: `${left}` : ""  }}

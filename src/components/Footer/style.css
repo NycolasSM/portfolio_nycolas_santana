@@ -1,6 +1,21 @@
 .portfolio__footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: gray;
+}
+
+.working__in__progress {
+  text-align: center;
+  font-weight: 400;
+  opacity: 0.4;
+}
+
+.portfolio__footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }

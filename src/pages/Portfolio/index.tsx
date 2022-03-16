@@ -180,36 +180,42 @@ function Portfolio() {
               <ProjectsCard
                 title="Company Landpage"
                 cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_company_landpage.webp"
-                link=""
-                description=""
+                link="https://github.com/NycolasSM/Company_LandPage_Bootstrap"
+                livePreview="https://company-land-page-bootstrap.vercel.app/"
+                description="Projeto realizado afins de relembrar conceitos e conhecimentos sobre Bootstrap e conhecer mais ideis de layouts UI e UX"
+                isChoosen={false}
               />
               <ProjectsCard
                 title="Vercel Clone "
                 cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_vercel_homepage_clone.webp"
-                link=""
-                description=""
+                link="https://github.com/NycolasSM/Vercel_HomePage_Clone"
+                description="Um clone da homePage da Vercel feito com ReactJs e SCSS"
+                isChoosen={false}
               />
               <ProjectsCard
                 title="Spotify Clone"
                 cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_spotify_clone.webp"
-                link=""
-                description=""
+                link="https://github.com/NycolasSM/Spotify_Clone_NextJs"
+                description="Spotify Clone with NextJs and using the Spotify API"
+                isChoosen={false}
               />
               <ProjectsCard
                 title="Be the Hero (Cypress)"
                 cardPreview="https://raw.githubusercontent.com/NycolasSM/assets/main/preview_be_the_hero.webp"
-                link=""
-                description=""
+                link="https://github.com/NycolasSM/be_the_hero_cypress"
+                description="Projeto realizado para praticar e aprender sobre testes automatizados com o Cypress e gerando relatórios com Allure"
                 backgroundSize={400}
                 backgroundPosition="center"
+                isChoosen={false}
               />
               <ProjectsCard
                 title="Netflix Clone"
                 cardPreview="https://camo.githubusercontent.com/6a4ccffbeeab7b07d65776148e8ed3ce7f6c0c6086ecaa2192f8f88dbcae6ede/68747470733a2f2f692e696d6775722e636f6d2f4670314452706d2e706e67"
-                link=""
-                description=""
+                link="https://github.com/NycolasSM/Netflix_Clone"
+                description="Um um clone da versão atual da Netflix consumindo uma API real feito com ReactJs"
                 backgroundSize={620}
                 backgroundPosition="center"
+                isChoosen={false}
               />
             </div>
           </div>
