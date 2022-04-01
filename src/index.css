@@ -30,3 +30,26 @@ main {
   background-color: #1b1b1b;
   padding-bottom: 480px;
 }
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #949494 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff0a;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 10px;
+    border: 3px solid #ffffff00;
+  }
