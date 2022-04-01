@@ -145,6 +145,7 @@ function Portfolio() {
             <TechnologyBadge link="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
             <TechnologyBadge link="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
             <TechnologyBadge link="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" />
+            <TechnologyBadge link="https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white" />
             <TechnologyBadge link="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" />
             <TechnologyBadge link="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
             <TechnologyBadge link="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />

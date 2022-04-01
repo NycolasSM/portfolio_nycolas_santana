@@ -3,7 +3,7 @@ import "./style.css";
 const Footer = () => {
   return (
     <>
-      <h2 className="working__in__progress">projeto em desenvolvimento</h2>
+      <h2 className="working__in__progress">em desenvolvimento</h2>
       <footer className="portfolio__footer">
         <div>
           <h4>Nycolas Santana</h4>
