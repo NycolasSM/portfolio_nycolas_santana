@@ -24,8 +24,9 @@ function Portfolio() {
           />
           <div className="about__me__container">
             <span>
-              Desenvolvedor Web com experiência em diversos projetos próprios e
-              de afins didáticos, me considero uma pessoa dedicada e que busca
+              Desenvolvedor FrontEnd com experiência em BackEnd, possuo
+              experiência com diversos projetos proficionais, próprios e de
+              afins didáticos, me considero uma pessoa dedicada e que busca
               evoluir e aprender mais a cada dia, busco sempre dar o meu melhor
               e me dedicar para que eu possa ser um grande profissional na área,
               buscando sempre estar pronto para superar qualquer desafio!
@@ -39,10 +40,10 @@ function Portfolio() {
                 <p>
                   1+ <span style={{ fontSize: "40px" }}>Ano</span>
                 </p>
-                <p>Experiencia estudando</p>
+                <p>Experiência</p>
               </div>
               <div className="about__me__card commits_count">
-                <p>360+</p>
+                <p>1.200+</p>
                 <p>Commits no GitHub</p>
               </div>
               <div className="about__me__card passion__percent">
@@ -64,7 +65,7 @@ function Portfolio() {
               <div className="college__formation__info">
                 <h3>UNIP</h3>
                 <span>Análise e desenvolvimento de Sistemas</span>
-                <p>(Cursando) 1º- semestre </p>
+                <p>(Trancado) 2º- semestre </p>
               </div>
             </div>
             <div className="glow__bar"></div>
@@ -139,6 +140,7 @@ function Portfolio() {
           </h3>
           <div className="technologies__badges">
             <TechnologyBadge link="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+            <TechnologyBadge link="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
             <TechnologyBadge link="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
             <TechnologyBadge link="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=green" />
             <TechnologyBadge link="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />

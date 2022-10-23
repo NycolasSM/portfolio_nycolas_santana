@@ -89,6 +89,8 @@
   background: transparent;
   border-radius: 5px;
   padding: 8px 22px;
+  
+  text-decoration: none;
 }
 
 .portfolio__header__contact__me::after {

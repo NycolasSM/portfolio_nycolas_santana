@@ -18,7 +18,10 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <h2 className="portfolio__header__contact__me"></h2>
+        <a
+          className="portfolio__header__contact__me"
+          href="mailto:nycolassantana00@gmail.com?subject=Contato pelo portfólio"
+        ></a>
       </div>
       <div className="portfolio__header__divider__line"></div>
     </header>
