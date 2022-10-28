@@ -7,12 +7,12 @@ const ProfileTitle = () => {
     <>
       <BrowserView>
         <div className="profile__Title">
-          <h3>Desenvolvedor FrontEnd</h3>
+          <h3>Desenvolvedor Web/Mobile</h3>
         </div>
       </BrowserView>
       <MobileView>
         <div className="profile__Title--mobile">
-          <h3>Desenvolvedor FrontEnd</h3>
+          <h3>Desenvolvedor Web/Mobile</h3>
         </div>
       </MobileView>
     </>
