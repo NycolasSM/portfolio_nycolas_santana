@@ -13,6 +13,7 @@
   position: absolute;
   z-index: 100;
   transform: scale(0.9);
+  padding-top: 1vw;
 }
 
 .hero__background__image {
@@ -37,17 +38,4 @@
   margin-bottom: -700px;
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-.mobile__dots__scroll {
-  margin-top: 50px;
-}
-
-.mobile__dots__scroll p {
-  padding: 2px;
-  font-size: 3rem;
-  border: 1px solid rgb(116, 116, 116);
-  background-color: rgb(71, 71, 71);
-  border-radius: 50%;
-  margin: 35px 0px;
 }

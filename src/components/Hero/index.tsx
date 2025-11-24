@@ -10,6 +10,7 @@ import ProfileName from "./components/ProfileName";
 import ProfileTitle from "./components/ProfileTitle";
 
 import { BrowserView, MobileView } from "react-device-detect";
+import ScrollIndicator from "./components/ScrollIndicator/indes";
 
 const Hero = () => {
   const [scrollTop, setScrollTop] = useState(0);
@@ -52,7 +53,7 @@ const Hero = () => {
               className="hero__background__image"
               alt="hero__image"
             />
-            <div className="hero__text">{/* <h2>Nycolas Santana</h2> */}</div>
+            <ScrollIndicator />
           </div>
         </div>
       </BrowserView>
