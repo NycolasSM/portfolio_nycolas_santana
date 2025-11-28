@@ -5,7 +5,7 @@
   right: 0;
   bottom: auto;
   z-index: 100;
-  backdrop-filter: blur(20px);
+  backdrop-filter: brightness(50%) blur(40px) contrast(95%);
 }
 
 .portfolio__header___nav__container {
@@ -81,21 +81,23 @@
 .portfolio__header__contact__me {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(144, 76, 199);
+  color: rgb(180, 89, 255);
   cursor: pointer;
   margin: 0;
 
   transition: all ease 0.3s;
   background: transparent;
   border-radius: 5px;
-  padding: 8px 22px;
-  
+  padding: 8px 14px;
+  background-color: #29292979;
+
   text-decoration: none;
 }
 
 .portfolio__header__contact__me::after {
   font-size: 1rem;
   content: "Entre em Contato";
+  border-radius: 6px;
 }
 
 @media (max-width: 600px) {

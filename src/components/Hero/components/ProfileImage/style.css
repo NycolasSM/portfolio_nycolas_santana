@@ -1,13 +1,13 @@
 .profile__image {
   position: relative;
-  height: 16vw;
-  width: 16vw;
+  height: 15vw;
+  width: 15vw;
   border: none;
   outline: none;
   color: white;
   background: #111;
   border-radius: 50%;
-  margin: 70px auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 
 .profile__image img {

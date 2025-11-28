@@ -1,9 +1,9 @@
 .portfolio__intro {
   font-weight: 600;
-  font-size: 5.5rem;
+  font-size: 4.8rem;
   margin: 190px auto 140px 0px;
-  line-height: 120px;
-  letter-spacing: 4px;
+  line-height: 110px;
+  letter-spacing: 3px;
   text-align: center;
   background: linear-gradient(91.36deg, #4946e9, #9701c4, #cc00ff);
   background-size: 200% 200%;
@@ -94,12 +94,10 @@
 }
 
 .courses {
-  height: 400px;
+  width: 47%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  width: 47%;
 }
 
 .courses h2 {
@@ -109,27 +107,40 @@
 }
 
 .courses__list {
-  display: flex;
-  padding: 0px 50px;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .course {
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 130px; /* 👉 garante altura igual */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* 👉 centraliza tudo */
+  text-align: center;
+}
+
+.course img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .course__info {
-  margin-top: 5px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 5px;
+}
+
+.course__info span {
+  font-size: 0.9rem;
 }
 
 .course__info span {
@@ -156,6 +167,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 14px;
 }
 
 .about__me__card {
@@ -175,25 +187,25 @@
 
 .projects__count p:first-child {
   color: rgb(142, 31, 245);
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
 .commits_count p:first-child {
   color: rgb(35, 190, 105);
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
 .years__experience p:first-child {
   color: rgb(31, 106, 245);
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
 .passion__percent p:first-child {
   color: rgb(245, 31, 102);
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   font-weight: bold;
 }
 
