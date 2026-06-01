@@ -49,7 +49,7 @@ const Hero = () => {
             <span className="text-slate-200 font-medium">Next.js</span> e{' '}
             <span className="text-slate-200 font-medium">React Native</span> com mais de 3 anos de experiência
             construindo interfaces modernas e aplicações escaláveis. Atualmente na{' '}
-            <span className="text-indigo-400 font-medium">Origin9</span>.
+            <span className="text-indigo-400 font-medium">Vita3</span>.
           </p>
 
           {/* CTAs */}
